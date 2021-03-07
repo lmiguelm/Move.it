@@ -1,0 +1,119 @@
+.settingButton {
+  border: none;
+  outline: none;
+
+  position: fixed;
+
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+
+  bottom: 0;
+  right: 0;
+
+  margin: 2rem 3rem;
+
+  cursor: pointer;
+
+  transition: filter .2s;
+
+  background-color: var(--blue-dark);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settingButton:hover {
+  filter: brightness(0.9);
+}
+
+.modalContainer {
+  height: 30rem;
+  width: 30rem;
+
+  background: var(--background);
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto auto;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 9999;
+  opacity: 1;
+
+  border-radius: 5px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
+}
+
+.modalContainer header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 3rem 2rem;
+
+  height: 100px;
+  width: 100%;
+  background: var(--gray-line);
+
+  box-shadow: 0 0 60 rgba(0, 0, 0, 0.6);
+}
+
+.modalContainer main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 3rem 2rem;
+}
+
+.modalContainer main div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modalContainer main div p {
+  font-size: 1.25rem;
+}
+
+.modalContainer main div svg, .modalContainer header svg{
+  cursor: pointer;
+  transition: filter .2s;
+}
+.modalContainer main div svg:hover,.modalContainer header svg:hover {
+  filter: brightness(0.9);
+}
+
+.modalContainer main div:nth-child(2n), .modalContainer main div:nth-child(3n) {
+  display: none;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.modalContainer main div:nth-child(2n) {
+  margin-top: 3rem;
+}
+
+.modalContainer main div:nth-child(2n) svg, .modalContainer main div:nth-child(3n) svg {
+  margin-right: 1rem;
+}
+
+
+@media(max-width: 768px) {
+  .modalContainer {
+    width: 23rem;
+  }
+  .modalContainer main div:nth-child(2n), .modalContainer main div:nth-child(3n) {
+    display: flex;
+  }
+}

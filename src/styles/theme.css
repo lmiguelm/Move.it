@@ -1,0 +1,35 @@
+.dark-mode {
+  --white: #fff;
+  --background: #222;
+  --background-secondary: #5555;
+  --gray-line: #666666;
+  --text: #ddd;
+  --text-highlight: #b3b9ff;
+  --title: #fff;
+  --red: #e83f5b;
+  --green: #4cd62b;
+  --blue: #5965e0;
+  --blue-dark: #4953b8;
+  --blue-twitter: #2aa9e0;
+  --border: #666666;
+  --overlay: rgba(000, 000, 000, 0.8);
+  --modal-background: #333;
+}
+
+.light-mode {
+  --white: #fff;
+  --background: #f2f3f5;
+  --background-secondary: #fff;
+  --gray-line: #dcdde0;
+  --text: #666666;
+  --text-highlight: #b3b9ff;
+  --title: #2e384d;
+  --red: #e83f5b;
+  --green: #4cd62b;
+  --blue: #5965e0;
+  --blue-dark: #4953b8;
+  --blue-twitter: #2aa9e0;
+  --border: #f0f1f3;
+  --overlay: rgba(242, 243, 245, 0.8);
+  --modal-background: #fff;
+}

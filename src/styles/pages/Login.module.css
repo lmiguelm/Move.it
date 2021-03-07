@@ -1,0 +1,80 @@
+.container {
+  height: 100vh;
+
+  background: var(--blue) url('/Simbolo.svg') no-repeat;
+  background-size: contain;
+ 
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 0rem 10rem;
+
+  /* background: red; */
+}
+
+.container main h1 {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.container main div {
+  display: flex;
+  align-items: center;
+}
+
+.container main div p {
+  margin-left: 0.5rem;
+  line-height: 1.5rem;
+  color: var(--white);
+}
+
+
+.container main button {
+  height: 50px;
+  outline: none;
+  border: 0;
+  background: linear-gradient(100deg, #28a745 50%, rgba(73, 83, 184, 0.2) 100%);
+  color: var(--title);
+  margin-top: 2rem;
+  border-radius: 5px;
+  transition: filter .2s;
+
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--white);
+}
+.container main button:hover {
+  filter: brightness(0.9);
+}
+
+.container main button:nth-last-child(1) {
+  margin-top: 1rem;
+  background: linear-gradient(100deg, #4285F4 50%, rgba(73, 83, 184, 0.2) 100%);
+}
+
+
+@media(max-width: 768px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+  .container main {
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+}

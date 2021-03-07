@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container > div {
+  flex: 2;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container > div div {
+  width: 100%;
+  background: url('/icons/levelup.svg') no-repeat center;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+}
+.container > div div p {
+  font-weight: 600;
+  font-size: 18rem;
+  text-align: center;
+  color: #5965e0;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.005);
+  opacity: 1;
+  z-index: 999;
+}
+
+.container > div p {
+  margin-top: 2rem;
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  max-width: 500px;
+  color: #5965e0;
+}
+
+.container > main {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 3rem 3rem;
+}
+
+.container > main header, .container > main main, .container > main footer {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #ccc;
+  padding: 2rem 0rem;
+  max-width: 400px;
+}
+
+.container > main header h3, .container > main main h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  filter: brightness(0.5);
+}
+
+.container > main header p, .container > main main p {
+  margin-top: 1.5rem;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.container > main header p span, .container > main main p span {
+  margin-right: 1rem;
+  color: #5965e0;
+}
+
+.container > main footer {
+  border-bottom: 0px;
+}
+
+@media(max-width: 760px) {
+  .container > main {
+    display: none;
+  }
+}
